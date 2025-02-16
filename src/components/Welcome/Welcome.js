@@ -8,14 +8,16 @@ const Welcome = () => {
   return (
     
     <div 
-    className={styles.container}
-    style={{
-      backgroundImage: `url(${process.env.PUBLIC_URL}/bg/welcome.png)`,
-      backgroundSize: 'contain',
-      backgroundPosition: 'center',
-      height: '100vh',
-    }}
-    >
+  className={styles.container}
+  style={{
+    backgroundImage: `url(${process.env.PUBLIC_URL}/bg/welcome.png)`,
+    backgroundSize: 'cover',  // Fills the screen while maintaining aspect ratio
+    backgroundPosition: 'center',  // Centers the image within the container
+    backgroundAttachment: 'fixed',  // Keeps the background fixed as you scroll (optional)
+    height: '100vh',  // Ensures the container takes up full height of the viewport
+    width: '100%',  // Makes sure the width is 100% of the parent container
+  }}
+>
 
       <div className={styles.buttonContainer}>
         <button onClick={() => navigate('/login')} className={styles.button}>
