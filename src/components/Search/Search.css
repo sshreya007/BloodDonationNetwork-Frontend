@@ -1,8 +1,11 @@
 /* SearchBlood.css */
 
+/* Adjusting the top margin to account for the navbar height + 4cm */
 .search-container {
     max-width: 600px;
-    margin: 20px auto;
+    margin-top: 201px;  /* 151px (4cm) + assumed 50px navbar height */
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     background-color: #f4f4f9;
     border-radius: 8px;

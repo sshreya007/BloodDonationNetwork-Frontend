@@ -27,7 +27,11 @@ function App() {
         <Route path="/blood-stock" element={<BloodStock />} />
         <Route path="/search" element={<Search />} />
         <Route path="/profile" element={<Profile />} />
-      </Routes>
+
+        <Route path="/admin/*" element={<AdminRoutes />} />
+        <Route path="/admin/login" element={<AdminLogin setIsAdminAuthenticated={setIsAdminAuthenticated} />} />
+
+        </Routes>
     </Router>
   );
 }
