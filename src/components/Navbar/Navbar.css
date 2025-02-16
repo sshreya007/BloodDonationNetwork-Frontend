@@ -1,18 +1,33 @@
+/* Ensure the navbar stays fixed at the top */
 .navbar {
+  position: fixed;       /* Fixed position */
+  top: 0;                /* At the top of the screen */
+  left: 0;               /* Start from the left */
+  width: 100%;           /* Full width */
+  height: 60px;          /* Fixed height - adjust as needed */
   background-color: #64D6D0;
-  padding: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 1000;         /* On top of other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Remove any default padding if needed */
+  padding: 0;
+  margin: 0;
 }
 
+/* Style for the navigation links */
 .navbar a {
   color: rgb(12, 12, 12);
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 0 15px;       /* Horizontal padding */
+  height: 100%;          /* Make link fill the navbar height */
+  display: flex;
+  align-items: center;
 }
 
+/* Active link styling */
 .navbar a.active {
   border-bottom: 2px solid white;
 }
