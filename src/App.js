@@ -9,6 +9,7 @@ import BloodStock from './components/RealTimeBloodStock/RealTimeBloodStock';
 import Search from './components/Search/Search';
 import Profile from './components/Profile/Profile';
 import Navbar from './components/Navbar/Navbar';
+import EditProfile from './components/Profile/EditProfile';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
