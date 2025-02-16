@@ -4,6 +4,8 @@ import styles from './Home.css';
 
 const Home = () => {
   return (
+
+    
     <div className={styles.container}>
       <Navbar />
       <div className={styles.content}>
@@ -27,5 +29,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
