@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #64D6D0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
