@@ -11,7 +11,7 @@ const Welcome = () => {
     className={styles.container}
     style={{
       backgroundImage: `url(${process.env.PUBLIC_URL}/bg/welcome.png)`,
-      backgroundSize: 'cover',
+      backgroundSize: 'contain',
       backgroundPosition: 'center',
       height: '100vh',
     }}
