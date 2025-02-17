@@ -10,9 +10,17 @@ import Search from './components/Search/Search';
 import Profile from './components/Profile/Profile';
 import Navbar from './components/Navbar/Navbar';
 import EditProfile from './components/Profile/EditProfile';
+import UserRoutes from './routes/UserRoutes';
+
+import AdminRoutes from './routes/AdminRoutes';
+import AdminLogin from './admin/AdminLogin';
+
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false); 
+
 
   return (
     <Router>
