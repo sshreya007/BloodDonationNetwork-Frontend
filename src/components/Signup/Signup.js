@@ -4,7 +4,7 @@ import styles from './Signup.module.css';
 
 const Signup = ({ setIsAuthenticated }) => {
   const [formData, setFormData] = useState({
-    firstName: '',
+    fullName: '',
     email: '',
     password: '',
     bloodType: ''
@@ -16,7 +16,7 @@ const Signup = ({ setIsAuthenticated }) => {
   
     // Check if all fields are filled
     if (
-      !formData.firstName ||
+      !formData.fullName ||
       !formData.email ||
       !formData.password ||
       !formData.bloodType
@@ -38,10 +38,10 @@ const Signup = ({ setIsAuthenticated }) => {
         <div className={styles.inputGroup}>
           <input
             type="text"
-            placeholder="First Name"
-            value={formData.firstName}
+            placeholder="Full Name"
+            value={formData.fullName}
             onChange={(e) =>
-              setFormData({ ...formData, firstName: e.target.value })
+              setFormData({ ...formData, fullName: e.target.value })
             }
           />
         </div>
