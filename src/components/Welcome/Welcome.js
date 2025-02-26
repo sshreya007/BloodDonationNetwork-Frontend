@@ -11,11 +11,11 @@ const Welcome = () => {
   className={styles.container}
   style={{
     backgroundImage: `url(${process.env.PUBLIC_URL}/bg/welcome.png)`,
-    backgroundSize: 'cover',  // Fills the screen while maintaining aspect ratio
-    backgroundPosition: 'center',  // Centers the image within the container
-    backgroundAttachment: 'fixed',  // Keeps the background fixed as you scroll (optional)
-    height: '100vh',  // Ensures the container takes up full height of the viewport
-    width: '100%',  // Makes sure the width is 100% of the parent container
+    backgroundSize: 'cover',  
+    backgroundPosition: 'center',  
+    backgroundAttachment: 'fixed',  
+    height: '100vh',  
+    width: '100%',  
   }}
 >
 
