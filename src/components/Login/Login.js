@@ -18,6 +18,7 @@ const Login = ({ setIsAuthenticated }) => {
   };
 
   return (
+    
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
         <h2 className={styles.title}>Login</h2>
