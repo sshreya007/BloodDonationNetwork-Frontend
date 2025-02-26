@@ -1,10 +1,10 @@
 .container {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-color: #64D6D0; /* Solid background color */
+  height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* To position the image on the right side */
 }
 
 .form {

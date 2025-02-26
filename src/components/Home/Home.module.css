@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Left Side - Text Section */
+.textSection {
+  flex: 1;
+  padding: 20px;
+}
+
+.textSection h1 {
+  font-size: 48px; /* Make heading bigger */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.textSection p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.featureCard {
+  background: #f8d7da;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Right Side - Huge Image */
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Push image to right */
+  align-items: center;
+}
+
+.bloodImage {
+  width: 100%;
+  max-width: 700px; /* Make image HUGE */
+  height: auto;
+  border-radius: 15px;
+}

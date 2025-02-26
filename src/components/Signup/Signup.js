@@ -13,10 +13,23 @@ const Signup = ({ setIsAuthenticated }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    // Check if all fields are filled
+    if (
+      !formData.firstName ||
+      !formData.email ||
+      !formData.password ||
+      !formData.bloodType
+    ) {
+      alert("All fields are required.");
+      return; // Stop the form submission if any field is empty
+    }
+  
     console.log(formData);
     setIsAuthenticated(true);
-    navigate('/home');
+    navigate("/home");
   };
+  
 
   return (
     <div className={styles.container}>
