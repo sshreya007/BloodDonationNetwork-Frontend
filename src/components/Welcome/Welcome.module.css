@@ -1,31 +1,84 @@
 .container {
-  
-  background-size: cover;
-  background-position: center;
+  background: url('http://localhost:3000/bg/welcome.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.buttonContainer {
   text-align: center;
+  position: relative;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
 }
 
+
+
+/* Gradient overlay for better text visibility */
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+/* Welcome text styling */
+.welcomeText {
+  z-index: 2;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow to text */
+}
+
+/* Button container styling */
+.buttonContainer {
+  z-index: 2;
+}
+
+/* Button styling */
 .button {
-  margin: 10px;
+  margin: 15px;
   padding: 15px 30px;
   font-size: 1.2rem;
-  background-color: #dd1313;
+  background-color: #e00b0bc2;
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
 }
 
+/* Button hover effect */
 .button:hover {
   transform: scale(1.1);
   background-color: #34495e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+/* Additional animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add fade-in effect on container */
+.container {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Make sure the buttons also fade in smoothly */
+.button {
+  animation: fadeIn 1.5s ease-out forwards;
 }
